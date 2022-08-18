@@ -1,0 +1,175 @@
+<style type="text/css">
+  .header{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 57%);
+    /*bottom: -50em;*/
+  }
+  .logo{
+    max-width: 2em;
+  }
+
+
+</style>
+
+<style type="text/css">
+  .flag{
+    transform: rotate(-45deg);
+    margin-left: -6em;
+  }
+  
+  .top {
+      height: 1em;
+      width: 8em;
+      background-color: #ff9933
+  }
+   
+  .middle {
+      height: 1em;
+      width: 8em;
+      background-color: white
+  }
+   
+  .bottom {
+      height: 1em;
+      width: 8em;
+      background-color: green
+  }
+  .wheel {
+    height: 1em;
+    width: 1em;
+    border: 1px solid darkblue;
+    border-radius: 45px;
+    position: relative;
+    margin: 0 auto
+  }
+
+  .wheel .line {
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    background: darkblue;
+  }
+
+  .line:nth-child(1) {
+    transform: rotate(15deg)
+  }
+
+  .line:nth-child(2) {
+    transform: rotate(30deg)
+  }
+
+  .line:nth-child(3) {
+    transform: rotate(45deg)
+  }
+
+  .line:nth-child(4) {
+    transform: rotate(60deg)
+  }
+
+  .line:nth-child(5) {
+    transform: rotate(75deg)
+  }
+
+  .line:nth-child(6) {
+    transform: rotate(90deg)
+  }
+
+  .line:nth-child(7) {
+    transform: rotate(105deg)
+  }
+
+  .line:nth-child(8) {
+    transform: rotate(120deg)
+  }
+
+  .line:nth-child(9) {
+    transform: rotate(135deg)
+  }
+
+  .line:nth-child(10) {
+    transform: rotate(150deg)
+  }
+
+  .line:nth-child(11) {
+    transform: rotate(165deg)
+  }
+
+  .line:nth-child(12) {
+    transform: rotate(180deg)
+  }
+
+</style>
+
+
+<div class=" d-flex align-items-center ">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <a href="./" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img class="logo mx-1" src="assets/img/logo.png" alt="">
+      <!-- <i class="bi bi-camera"></i> -->
+      <h1 class="m-0 text-success">LiveCristle</h1>
+    </a>
+
+    <div class="wrapper">
+        <div class="flag">
+            <div class="top"></div>
+            <div class="middle">
+                <div class="wheel">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="gallery.html">Nature</a></li>
+            <li><a href="gallery.html">People</a></li>
+            <li><a href="gallery.html">Architecture</a></li>
+            <li><a href="gallery.html">Animals</a></li>
+            <li><a href="gallery.html">Sports</a></li>
+            <li><a href="gallery.html">Travel</a></li>
+            <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+                <li><a href="#">Sub Menu 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+    </div>
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+  </div>
+</div>
