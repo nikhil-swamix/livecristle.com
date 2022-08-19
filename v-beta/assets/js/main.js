@@ -314,3 +314,42 @@ var cursor = {
 };
 
 cursor.init();
+
+// ---- SWAMIX EXPERIENCE MOD
+// semiscroll= $(window).bind('DOMMouseScroll mousewheel', function(event) {
+//   event.preventDefault()
+//     console.log(event)
+//     if (event.originalEvent.wheelDelta >= 0) {
+//         window.scrollTo(0, window.scrollY - window.innerHeight / 2);
+//         console.log('Scroll up');
+//     }
+//     else {
+//         console.log('Scroll down');
+//         window.scrollTo(0, window.scrollY + window.innerHeight / 2);
+//     }
+// });
+
+$('body').on({
+    'mousewheel': function(e) {
+        if (e.target.id == 'el') return;
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+
+$(window).on('wheel', function(e) {
+
+  var delta = e.originalEvent.deltaY;
+
+  if (delta > 0) $('body').text('down');
+  else $('body').text('up');
+
+  return false; // this line is only added so the whole page won't scroll in the demo
+});
+
+
+$(document).ready(function() {
+  $('video').each(function() {
+      $(this).get(0).pause();
+  });
+});
