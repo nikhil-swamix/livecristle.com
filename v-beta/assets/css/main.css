@@ -1366,6 +1366,7 @@ opacity: 1 !important;
   border: none !important;
   overflow: hidden !important;
 }
+
 /*-----CURSOR */
 .cursor-dot,
 .cursor-dot-outline {
@@ -1395,4 +1396,19 @@ opacity: 1 !important;
   width: 2em;
   height: 2em;
   background-color: rgb(25,135,84);
+}
+
+/*--------------*/
+#development-section{
+/*  background-image: url("/assets/img/graphics/4.jpg");
+  background-size: cover;
+*/
+}
+#development-section .bg{
+  position: absolute;
+  z-index: -1;    
+}
+
+#development-section img{
+  height: 100%;
 }
