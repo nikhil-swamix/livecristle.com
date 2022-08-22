@@ -177,6 +177,30 @@ typewriter.typeString('Best Web Development & Digital Marketing Company')
     .pauseFor(2500)
     .start();
 
+
+function magictext(delay=100) {
+  `element must have "magictext" attribute to see fading effect`
+
+  $('[magicktext]').each(function(index, el) {
+    el= $(el)
+    text=el.text()
+    words=text.split(' ').filter(n=>n)
+    el.empty()
+    words.forEach((w,i)=>{
+      let word=$(`<w class="hide">${w} </w>`)
+      el.append(word)
+
+      setTimeout( ()=>{word.addClass('show')},delay*i)
+      
+      console.log(i)
+    })
+    console.log(el,words)
+
+  });
+  // body...
+}
+magictext()
+
 /*-----COMPONENT LOADER*/
 $(document).ready(function() {
   $('[data-load]').each(function(index, el) {
@@ -350,6 +374,6 @@ $(window).on('wheel', function(e) {
 
 $(document).ready(function() {
   $('video').each(function() {
-      $(this).get(0).pause();
+      // $(this).get(0).pause();
   });
 });
