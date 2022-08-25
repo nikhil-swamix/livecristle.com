@@ -21,6 +21,8 @@
 </head>
 
 <body>
+  <div class="v-bar"></div>
+  <div class="h-bar"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" data-load="components/header.html" class="">
@@ -49,7 +51,7 @@
       <div>
         <img class="w-100" src="./assets/img/graphics/1.jpg" alt="">
       </div>
-      <div class="overlay px-2 px-lg-5 ">
+      <div class="overlay px-2 p-lg-5 ">
 
         <h1 class="display-1 pt-5 mt-5" id="heading" data-aos="fade-up" data-aos-duration="1000">
           <span class="text-success">LiveCristle</span> Business Solutions
@@ -62,40 +64,40 @@
     </div>
   </main>
 
-  <section class="shift-up-lg container mb-5 pb-lg-5">
-    <div class="cardholder row text-dark  mt-3 pt-3" >
-      <div class="card rounded-2x mx-lg-3 p-0 col-lg col-12 mt-3 text-center" data-aos="fade-in">
+  <section id="services" class="shift-up-lg container mb-5 pb-lg-5" >
+    <div class="cardholder row text-dark " >
+      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
         <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
             <source src="assets/webdev.mp4" type="video/webm">
         </video>
         <!-- <img src="assets/img/webdev3.png" class="card-img-top" alt="..."> -->
         <div class="card-body">
           <h5 class="card-title ">Web Development</h5>
-          <p class="card-text " magicktext="">
+          <p class="card-text text-justify " magicktext="">
             A well-designed website is essential for reaching a larger audience & generating more leads or customers. Using a website, you can collect & read testimonials about your products & services much more quickly & easily. Web development & design help to promote a company's brand name.
           </p>
           <a href="#" class="btn btn-primary rounded-2x">Start Project</a>
         </div>
       </div>
-      <div class="card rounded-2x mx-lg-3 p-0 col-lg col-12 mt-3 text-center" data-aos="fade-in">
+      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
         <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
             <source src="assets/marketing2.mp4" type="video/webm">
         </video>
         <div class="card-body">
           <h5 class="card-title ">Digital Marketing</h5>
-          <p class="card-text " magicktext="">
+          <p class="card-text text-justify " magicktext="">
             Digital marketing lets them reach a wider audience, scale their business further, and generate more revenue. Setting up a business online, running ad campaigns, developing content strategies are a few of the tasks a digital marketing expert does to provide such results.
           </p>
           <a href="#" class="btn btn-primary rounded-2x">Start Campaign</a>
         </div>
       </div>
-      <div class="card rounded-2x mx-lg-3 p-0 col-lg col-12 mt-3 text-center" data-aos="fade-in">
+      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
         <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
             <source src="assets/cameragraphy.mp4" type="video/webm">
         </video>
         <div class="card-body">
           <h5 class="card-title ">Product Photography</h5>
-          <p class="card-text " magicktext="">
+          <p class="card-text text-justify " magicktext="">
             Professional photos establish your brand’s identity. A picture is worth 1000 words. And when it comes to business, it’s worth more–revenue. Good photography can make or break a brand. Photos give your business a competitive edge. Press the button below to contact us.
           </p>
           <a href="#" class="btn btn-primary rounded-2x">Start Session</a>
@@ -105,12 +107,22 @@
     </div>
   </section>
 
-
-  <section id='development-section' class="py-lg-5 mt-5"  >
-    <div class="bg ">
-      <img src="/assets/img/graphics/4.jpg" alt="">
+  <section class="">
+    <!-- <img src="assets/img/outsource.webp" alt=""> -->
+    <div class="row ">
+      <!-- <h1 class="text-white text-center display-1 my-5">Outsource and Save Money</h1> -->
+      <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto" style="z-index: -1;">
+          <source src="assets/loopzoom.mp4" type="video/webm">
+      </video>
+      
     </div>
-    <div class="row mx-0 p-lg-0 mt-5">
+  </section>
+  <!-- <section class="py-5 my-5">
+    
+  </section> -->
+
+  <section id='development-section' class="py-5 mt-5"  >
+    <div class="row mx-0 p-lg-0 ">
       <div class="mt-3 col-12 col-lg-4 px-1">
         <img class="img-fluid shadow rounded-2x" src="assets/img/appdesign2.jpg" alt="">
         <span class="ms-lg-5 mt-lg-1 badge bg-dark ">App Development</span>
@@ -119,7 +131,7 @@
         <img class="img-fluid shadow rounded-2x" src="assets/img/webdev2.jpeg" alt="">
         <span class="ms-lg-5 mt-lg-1 badge bg-dark ">Web Development</span>
       </div>
-      <div class="mt-3 col-12 rounded-2x col-lg-4 p-1 pt-5" style="background-color: #0008;backdrop-filter:blur(5px)">
+      <div class="mt-3 col-12 rounded-2x col-lg-4 p-1 pt-5" style="background-color: #000a;backdrop-filter:blur(3px)">
         <!-- <img class="img shadow-fluid float-none displaypic" src="/assets/img/graphics/4.jpg" alt=""> -->
         <h1 class="text-center">Application Development</h1>
         <h3 class="px-lg-5 text-left">
@@ -130,56 +142,47 @@
   </section>
 
 
-  <main id="main" data-aos="fade" data-aos-delay="200">
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container-fluid">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                LIST
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
 
+  <section class="my-5 py-5">
+    <h1 class="text-white text-center display-1 my-5">WHAT OUR CLIENTS SAY</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
+              <source src="assets/testimonial/1.mp4" type="video/webm">
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
+              <source src="assets/testimonial/2.mp4" type="video/webm">
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
+              <source src="assets/testimonial/3.mp4" type="video/webm">
+          </video>
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+      <div class="swiper-pagination"></div>
+    </div>
 
-  </main><!-- End #main -->
+    <script>
+      $(document).ready(function() {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+        
+      });
+    </script>
+    
+  </section>
+  
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -192,12 +195,15 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+
   <div class="cursor-dot-outline"></div>
   <div class="cursor-dot"></div>
 
+
+
+
+
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
@@ -208,14 +214,14 @@
 
 
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>  
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js" integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

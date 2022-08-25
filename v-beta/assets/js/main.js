@@ -168,14 +168,14 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString('Best Web Development & Digital Marketing Company')
-    .pauseFor(2500)
-    .deleteAll(25)
-    .typeString('Take Your Business To Next Level')
-    .pauseFor(2500)
-    .deleteAll(25)
-    .typeString('Highly Affordable Pricing')
-    .pauseFor(2500)
-    .start();
+  .pauseFor(2500)
+  .deleteAll(25)
+  .typeString('Take Your Business To Next Level')
+  .pauseFor(2500)
+  .deleteAll(25)
+  .typeString('Highly Affordable Pricing')
+  .pauseFor(2500)
+  .start();
 
 
 function magictext(delay=100) {
@@ -189,15 +189,9 @@ function magictext(delay=100) {
     words.forEach((w,i)=>{
       let word=$(`<w class="hide">${w} </w>`)
       el.append(word)
-
       setTimeout( ()=>{word.addClass('show')},delay*i)
-      
-      console.log(i)
     })
-    console.log(el,words)
-
   });
-  // body...
 }
 magictext()
 
@@ -213,7 +207,7 @@ $(document).ready(function() {
 
 /*-----CURSOR*/
 var cursor = {
-    delay: 4,
+    delay: 3,
     _x: 0,
     _y: 0,
     endX: window.innerWidth / 2,
@@ -222,6 +216,9 @@ var cursor = {
     cursorEnlarged: false,
     $dot: document.querySelector(".cursor-dot"),
     $outline: document.querySelector(".cursor-dot-outline"),
+    $vbar: document.querySelector(".v-bar"),
+    $hbar: document.querySelector(".h-bar"),
+
 
     init: function () {
         // Set up element sizes
@@ -232,27 +229,27 @@ var cursor = {
         this.animateDotOutline();
     },
 
-        updateCursor: function(e) {
-            var self = this;
+    updateCursor: function(e) {
+        var self = this;
 
-            console.log(e)
+        console.log(e)
 
-            // Show the cursor
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
+        // Show the cursor
+        self.cursorVisible = true;
+        self.toggleCursorVisibility();
 
-            // Position the dot
-            self.endX = e.pageX;
-            self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
-            self.$dot.style.left = self.endX + 'px';
-        },
+        // Position the dot
+        self.endX = e.pageX;
+        self.endY = e.pageY;
+        self.$dot.style.top = self.endY + 'px';
+        self.$dot.style.left = self.endX + 'px';
+    },
 
     setupEventListeners: function () {
         var self = this;
 
         // Anchor hovering
-        document.querySelectorAll("a").forEach(function (el) {
+        document.querySelectorAll("x").forEach(function (el) {
             el.addEventListener("mouseover", function () {
                 self.cursorEnlarged = true;
                 self.toggleCursorSize();
@@ -283,6 +280,9 @@ var cursor = {
             self.endY = e.pageY;
             self.$dot.style.top = self.endY + "px";
             self.$dot.style.left = self.endX + "px";
+
+            self.$hbar.style.top = self.endY + "px";
+            self.$vbar.style.left = self.endX + "px";
         });
 
         // Hide/show cursor
@@ -318,9 +318,14 @@ var cursor = {
         if (self.cursorEnlarged) {
             self.$dot.style.transform = "translate(-50%, -50%) scale(0.75)";
             self.$outline.style.transform = "translate(-50%, -50%) scale(1.5)";
+            self.$hbar.style.opacity = 1;
+            self.$vbar.style.opacity = 1;
+
         } else {
             self.$dot.style.transform = "translate(-50%, -50%) scale(1)";
             self.$outline.style.transform = "translate(-50%, -50%) scale(1)";
+            self.$hbar.style.opacity = 0;
+            self.$vbar.style.opacity = 0;
         }
     },
 
@@ -336,8 +341,28 @@ var cursor = {
         }
     }
 };
-
 cursor.init();
+
+$('.card, h1,#development-area img').hover(function() {
+  $('.cursor-dot').css('z-index',100)
+  // $('.cursor-dot-outline').css('z-index',-100)
+  $('h1').css('z-index',10)
+  // $('.cursor-dot-outline').css('opacity',0)
+}, function() {
+  $('.cursor-dot-outline').css('z-index',0)
+  /* Stuff to do when the mouse leaves the element */
+});
+
+$('w').hover(function() {
+  $(this).prev().css('font-size', '1.25em');
+  $(this).css('font-size', '1.5em');
+  $(this).next().css('font-size', '1.25em');
+},function() {
+  $(this).prev().css('font-size', '1em');
+  $(this).css('font-size', '1em');
+  $(this).next().css('font-size', '1em');
+  /* Stuff to do when the mouse leaves the element */
+});
 
 // ---- SWAMIX EXPERIENCE MOD
 // semiscroll= $(window).bind('DOMMouseScroll mousewheel', function(event) {
@@ -353,23 +378,7 @@ cursor.init();
 //     }
 // });
 
-$('body').on({
-    'mousewheel': function(e) {
-        if (e.target.id == 'el') return;
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})
 
-$(window).on('wheel', function(e) {
-
-  var delta = e.originalEvent.deltaY;
-
-  if (delta > 0) $('body').text('down');
-  else $('body').text('up');
-
-  return false; // this line is only added so the whole page won't scroll in the demo
-});
 
 
 $(document).ready(function() {
