@@ -1,248 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" >
   <title>LiveCristle Business Solutions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link rel="icon" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" >
+  
   <!-- JQ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js" integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false">
   <div class="v-bar"></div>
   <div class="h-bar"></div>
-
-  <!-- ======= Header ======= -->
-  <header id="header" data-load="components/header.html" class="">
-    
-  </header>
-
-  <main>
-    <audio id="myAudio" controls autoplay>
-      <source src="assets/cinematic.mp3" type="audio/mpeg">
-      <source src="horse.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-    <script type="text/javascript">
-      function myFunction() {
-        var x = document.getElementById("myAudio").autoplay;
-        document.getElementById("demo").innerHTML = x;
-      }
-      // myFunction()
-    </script>
-    <div id="hero" class="position-relative">
-        <!-- <div class="hero-video">
-          <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
-              <source src="assets/tunnelzoom.mp4" type="video/webm">
-          </video>
-        </div> -->
-      <div>
-        <img class="w-100" src="./assets/img/graphics/1.jpg" alt="">
-      </div>
-      <div class="overlay px-2 p-lg-5 ">
-
-        <h1 class="display-1 pt-5 mt-5" id="heading" data-aos="fade-up" data-aos-duration="1000">
-          <span class="text-success">LiveCristle</span> Business Solutions
-        </h1>
-        
-        <h2 id="heading2" class="pt-0" data-aos="fade-up" data-aos-duration="1500">
-          Best Web Development & Digital Marketing Company
-        </h2>
-      </div>
-    </div>
-  </main>
-
-  <section id="services" class="shift-up-lg container mb-5 pb-lg-5" >
-    <div class="cardholder row text-dark " >
-      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
-        <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
-            <source src="assets/webdev.mp4" type="video/webm">
-        </video>
-        <!-- <img src="assets/img/webdev3.png" class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <h5 class="card-title ">Web Development</h5>
-          <p class="card-text text-justify " magicktext="">
-            A well-designed website is essential for reaching a larger audience & generating more leads or customers. Using a website, you can collect & read testimonials about your products & services much more quickly & easily. Web development & design help to promote a company's brand name.
-          </p>
-          <a href="#" class="btn btn-primary rounded-2x">Start Project</a>
-        </div>
-      </div>
-      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
-        <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
-            <source src="assets/marketing2.mp4" type="video/webm">
-        </video>
-        <div class="card-body">
-          <h5 class="card-title ">Digital Marketing</h5>
-          <p class="card-text text-justify " magicktext="">
-            Digital marketing lets them reach a wider audience, scale their business further, and generate more revenue. Setting up a business online, running ad campaigns, developing content strategies are a few of the tasks a digital marketing expert does to provide such results.
-          </p>
-          <a href="#" class="btn btn-primary rounded-2x">Start Campaign</a>
-        </div>
-      </div>
-      <div class="card rounded-2x mx-lg-3 p-0 col-xl col-md-4 col-12 mt-3 text-center" data-aos="fade-in">
-        <video class="w-100 " width="auto" autoplay  muted loop  playsinline preload="auto">
-            <source src="assets/cameragraphy.mp4" type="video/webm">
-        </video>
-        <div class="card-body">
-          <h5 class="card-title ">Product Photography</h5>
-          <p class="card-text text-justify " magicktext="">
-            Professional photos establish your brand’s identity. A picture is worth 1000 words. And when it comes to business, it’s worth more–revenue. Good photography can make or break a brand. Photos give your business a competitive edge. Press the button below to contact us.
-          </p>
-          <a href="#" class="btn btn-primary rounded-2x">Start Session</a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-
-  <section class="container">
-    <div  class="row" >
-      <div class="col-sm-12   text-left ">
-        <div class="content-inner">
-          <div class="title-box">
-            <h2 class="display-2" data-wow-delay="0.05s" >Our Approach</h2>
-            <h5 class="wow fadeInUp animated" data-wow-delay="0.10s">We help you get online</h5>
-
-          </div>
-        </div> 
-      </div> 
-      <div class="col-sm-3   text-left ">
-        <div class="content-inner">
-          <div class="wow fadeIn animated" data-wow-delay="0.05s">
-            <h5 class="steps">AWARENESS</h5>
-            <p>Brand awareness is the first step towards digital marketing. We generate an awareness about your product with quality content, in a creative and interesting way so that you are heard, noticed &amp; remembered.</p>
-            
-          </div>
-        </div> 
-      </div> 
-      <div class="col-sm-3   text-left ">
-        <div class="content-inner">
-          <div class="wow fadeIn animated" data-wow-delay="0.10s">
-            <h5 class="steps">CONSIDERATION</h5>
-            <p>In this competing world it’s not easy to stand out, but we ensure you do with strategically positioning of your brand to multiply visibility. Projecting your brand in a way to be considered as the one-stop solution is what we aim to deliver.</p>
-            
-          </div>
-        </div> 
-      </div> 
-      <div class="col-sm-3   text-left ">
-        <div class="content-inner">
-          <div class="wow fadeIn animated" data-wow-delay="0.15s">
-            <h5 class="steps">CONVERSION</h5>
-            <p>Transferring potential leads to customers is the ultimate goal for digital marketing. We enhance your digital presence to increase the potential of lead generation and conversion.</p>
-            
-          </div>
-        </div> 
-      </div> 
-      <div class="col-sm-3   text-left ">
-        <div class="content-inner">
-          <div class="wow fadeIn animated" data-wow-delay="0.20s">
-            <h5 class="steps">ENGAGEMENT</h5>
-            <p>Engaging the current customers with quality and innovative content to retain them onto the platform is as essential as acquiring a new one. We engage the client with quality content marketing and keep them captivated on the platform.</p>
-            
-          </div>
-        </div> 
-      </div> 
-    </div>
-  </section>
-
-  <section class="" style="position:relative;">
-    <!-- <img src="assets/img/outsource.webp" alt=""> -->
-    <div class="row " style="position: static;">
-      <video class="w-100 col-12" width="auto" autoplay  muted loop  playsinline preload="auto" style="z-index: -1;position: absolute;">
-          <source src="assets/loopzoom.mp4" type="video/webm">
-      </video>
-      <!-- <h1 class="text-white text-center display-1 my-5">Outsource and Save Money</h1> -->
-      <div class="card col-3">
-        <img class="card-img-top" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="Flex Card Image 1">
-        <div class="card-body">
-          <h4 class="card-title">Card Title</h4>
-          <p class="card-text">Here is a longer description of the card and the height will be auto aligned with flex box.</p>
-        </div>
-      </div>
-        
-      <div>
-    </div>
-  </section>
-  <!-- <section class="py-5 my-5">
-    
-  </section> -->
-
-  <section id='development-section' class="py-5">
-    <div class="row mx-0 p-lg-0 ">
-      <div class="mt-3 col-12 col-lg-4 px-1">
-        <img class="img-fluid shadow rounded-2x" src="assets/img/appdesign2.jpg" alt="">
-        <span class="ms-lg-5 mt-lg-1 badge bg-dark ">App Development</span>
-      </div>
-      <div class="mt-3 col-12 col-lg-4 px-1">
-        <img class="img-fluid shadow rounded-2x" src="assets/img/webdev2.jpeg" alt="">
-        <span class="ms-lg-5 mt-lg-1 badge bg-dark ">Web Development</span>
-      </div>
-      <div class="mt-3 col-12 rounded-2x col-lg-4 p-1 pt-5" style="background-color: #000a;backdrop-filter:blur(3px)">
-        <!-- <img class="img shadow-fluid float-none displaypic" src="/assets/img/graphics/4.jpg" alt=""> -->
-        <h1 class="text-center">Application Development</h1>
-        <h3 class="px-lg-5 text-left">
-          Get your app the way you wanted. with our highly experienced team of developers, you can be confident that your clients will keep coming back to your apps. The apps are user friendly which will result in high customer satisfaction.
-        </h3>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="my-5 py-5">
-    <h1 class="text-white text-center display-1 my-5">WHAT OUR CLIENTS SAY</h1>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
-              <source src="assets/testimonial/1.mp4" type="video/webm">
-          </video>
-        </div>
-        <div class="swiper-slide">
-          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
-              <source src="assets/testimonial/2.mp4" type="video/webm">
-          </video>
-        </div>
-        <div class="swiper-slide">
-          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline preload="auto">
-              <source src="assets/testimonial/3.mp4" type="video/webm">
-          </video>
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <script>
-      $(document).ready(function() {
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-          },
-        });
-        
-      });
-    </script>
-    
-  </section>
   
+  <!------------------------- HEADER -------------------------->
+  <header id="header" data-load="components/header.html" class="m-0 p-0"> </header>
+  
+  <!------------------------- SCROLLER ------------------------>
+  <div  id="fullpage">
+    <section id="hero" class="section" style="background-image: url(assets/img/graphics/1.jpg);background-repeat: no-repeat;background-size: cover;">
+      <div class="mobile">
+        <img class="img-fluid" src="assets/img/graphics/1.jpg" alt="">
+      </div>
+      <div class="p-2 px-lg-5 py-lg-3" style="backdrop-filter: brightness(90%);">
+        <div>
+          <h2 id="heading2" class=" col-lg-12 m-0" data-aos="fade-up" data-aos-duration="1500">
+            Best Web Development & Digital Marketing Company
+          </h2>
+          <h1 id="heading" class="display-1 mt-0 col-lg-12"  data-aos="fade-up" data-aos-duration="1000">
+            <span class="text-success">LiveCristle</span> Business Solutions
+          </h1>
+          <p class="col-lg-6">
+            contact us to learn how our clients are increasing their revenue and retaining their users. our apps and website allowed many businesses to succeed online 
+          </p>
+          <div class="cardholder row mx-0 text-dark col-lg-10 " >
+            <div class="card rounded me-lg-3 p-0 col-lg-3 mt-3 text-center" data-aos="fade-in">
+              <video class="w-100 " width="auto" muted loop  playsinline data-keepplaying preload="auto">
+                <source src="assets/webdev.mp4" type="video/webm">
+              </video>
+              <div class="card-body p-lg-2">
+                <h5 class="card-title fw-bolder ">Web Development</h5>
+                <p class="card-text text-justify text-condensed " magicktext="">
+                  A well-designed website is essential for reaching a larger audience & bring more customers. Using a website, you can present your products & services much more quickly & easily. Web development & design help to promote a company's brand name.
+                </p>
+                <a href="#" class="btn btn-primary rounded" btn-cta>Start Project</a>
+              </div>
+            </div>
+            <div class="card rounded me-lg-3 p-0 col-lg-3 mt-3 text-center" data-aos="fade-in">
+              <video class="w-100 " width="auto" muted loop  playsinline data-keepplaying preload="auto">
+                <source src="assets/marketing2.mp4" type="video/webm">
+              </video>
+              <div class="card-body p-lg-2">
+                <h5 class="card-title fw-bolder ">Digital Marketing</h5>
+                <p class="card-text text-justify text-condensed " magicktext="">
+                  Digital marketing lets them reach a wider audience, scale their business further, and generate more revenue. Setting up a business online, running ad campaigns, developing content strategies are a few of the tasks a digital marketing expert does to provide such results.
+                </p>
+                <a href="#" class="btn btn-primary rounded" btn-cta>Start Campaign</a>
+              </div>
+            </div>
+            <div class="card rounded me-lg-3 p-0 col-lg-3 mt-3 text-center" data-aos="fade-in">
+              <video class="w-100 " width="auto" muted loop  playsinline data-keepplaying preload="auto">
+                <source src="assets/cameragraphy.mp4" type="video/webm">
+              </video>
+              <div class="card-body p-lg-2">
+                <h5 class="card-title fw-bolder ">Product Photography</h5>
+                <p class="card-text text-justify text-condensed " magicktext="">
+                  Professional photos establish your brand’s identity. A picture is worth 1000 words. And when it comes to business, it’s worth more–revenue. Good photography can make or break a brand. Photos give your business a competitive edge. Press the button below to contact us.
+                </p>
+                <a href="#" class="btn btn-primary rounded" btn-cta>Start Session</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section" style="background-image: url(assets/img/bg/1.webp);background-repeat: no-repeat;background-size: cover;">
+      <div class="row px-lg-5" style="backdrop-filter: brightness(80%) ;">
+        <h2 class="display-1 py-lg-5">OUR STRATEGY</h2>
+        <div class="col-12 col-lg-6  text-justify ">
+          <h5 class="steps">AWARENESS</h5>
+          <p class="p-lg-3 font-md">
+            Brand awareness is the first step towards digital marketing. We generate an awareness about your product with quality content, in a creative and interesting way so that you are heard, noticed &amp; remembered.
+          </p> 
+        </div> 
+        <div class="col-12 col-lg-6  text-justify ">
+          <h5 class="steps">CONSIDERATION</h5>
+          <p class="p-lg-3 font-md">
+            In this competing world it’s not easy to stand out, but we ensure you do with strategically positioning of your brand to multiply visibility. Projecting your brand in a way to be considered as the one-stop solution is what we aim to deliver.
+          </p> 
+        </div> 
+        <div class="col-12 col-lg-6  text-justify ">
+          <h5 class="steps">CONVERSION</h5>
+          <p class="p-lg-3 font-md">
+            Transferring potential leads to customers is the ultimate goal for digital marketing. We enhance your digital presence to increase the potential of lead generation and conversion.
+          </p> 
+        </div> 
+        <div class="col-12 col-lg-6  text-justify ">
+          <h5 class="steps">ENGAGEMENT</h5>
+          <p class="p-lg-3 font-md">
+            Engaging the current customers with quality and innovative content to retain them onto the platform is as essential as acquiring a new one. We engage the client with quality content marketing and keep them captivated on the platform.
+          </p> 
+        </div> 
+      </div>
+    </section>
+    
+    <section id='development-section' class="section" style="background-image: url(assets/img/bg/2.webp)">
+      <div class="px-lg-5" style="backdrop-filter: brightness(60%) ;"">
+        <h2 class="p-2 text-dark display-1 text-white m-0">WHAT WE DO</h2>
+        <div class="row mx-0  py-lg-0 ">
+          <div class=" col-12 col-lg px-1 px-lg-2 my-4 my-lg-0">
+            <span class="btn btn-outline-light my-lg-1 ">App Development</span>
+            <img class="img-fluid shadow rounded" src="assets/img/appdesign2.jpg" alt="">
+          </div>
+          <div class=" col-12 col-lg px-1 px-lg-2 my-4 my-lg-0">
+            <span class="btn btn-outline-light my-lg-1  ">Web Development</span>
+            <img class="img-fluid shadow rounded " src="assets/img/webdev2.jpeg" alt="">
+          </div>
+          <div class=" col-12 col-lg px-1 px-lg-2 my-4 my-lg-0 ">
+            <span class="btn btn-outline-light my-lg-1">Software Development</span>
+            <img class="img-fluid shadow rounded" src="assets/img/software-dev.png" alt="">
+          </div>
+        </div>
+        <p class="text-left container font-md mt-5">
+          Get your app the way you wanted. with our highly experienced team of developers, you can be confident that your clients will keep coming back to you. The apps are user friendly which will result in high customer satisfaction.
+        </p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <video  class="covervideo" autoplay  muted loop  playsinline data-keepplaying preload="auto">
+        <source src="assets/loopzoom.mp4" type="video/webm">
+      </video>
+      <h1 class="text-white text-center display-1 ">WHAT OUR CLIENTS SAY</h1>
+      
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline data-keepplaying preload="auto">
+            <source src="assets/testimonial/3.mp4" type="video/webm">
+          </video>
+        </div>
+        <div class="col-12 col-lg-4">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline data-keepplaying preload="auto">
+            <source src="assets/testimonial/1.mp4" type="video/webm">
+          </video>
+        </div>
+        <div class="col-12 col-lg-4">
+          <video class="img-fluid" width="auto" autoplay  muted loop  playsinline data-keepplaying preload="auto">
+            <source src="assets/testimonial/2.mp4" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
 
+  </div>
+  
+  
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
@@ -253,40 +177,30 @@
         Designed by <a href="./">LiveCristle</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
-
+  </footer>
+  
   <div class="cursor-dot-outline"></div>
   <div class="cursor-dot"></div>
-
-
-
-
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>  
+  
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-
-
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
+  
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>  
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js" integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha512-XOpdFagEEv9XMxN/2EdvFL/PfGtFDjX+AkRznsFHDtdC05YWdkMnz5JZUfrbnEabOQaMc7YNTl2xPbOu3J858Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/main.js"></script>
-
+  
 </body>
 
 </html>

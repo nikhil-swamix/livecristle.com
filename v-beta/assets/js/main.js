@@ -182,18 +182,20 @@ function magictext(delay=100) {
   `element must have "magictext" attribute to see fading effect`
 
   $('[magicktext]').each(function(index, el) {
+    el.style.opacity=1
+    el.style.display='block'
+    
     el= $(el)
     text=el.text()
     words=text.split(' ').filter(n=>n)
     el.empty()
     words.forEach((w,i)=>{
-      let word=$(`<w class="hide">${w} </w>`)
+      let word=$(`<w class="opacity-0">${w} </w>`)
       el.append(word)
-      setTimeout( ()=>{word.addClass('show')},delay*i)
+      setTimeout( ()=>{word.addClass('opacity-100')},delay*i)
     })
   });
 }
-magictext()
 
 /*-----COMPONENT LOADER*/
 $(document).ready(function() {
@@ -353,36 +355,31 @@ $('.card, h1,#development-area img').hover(function() {
   /* Stuff to do when the mouse leaves the element */
 });
 
-$('w').hover(function() {
-  $(this).prev().css('font-size', '1.25em');
-  $(this).css('font-size', '1.5em');
-  $(this).next().css('font-size', '1.25em');
-},function() {
-  $(this).prev().css('font-size', '1em');
-  $(this).css('font-size', '1em');
-  $(this).next().css('font-size', '1em');
-  /* Stuff to do when the mouse leaves the element */
+// ------------------ FULLPAGE JS --------------------
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+    autoScrolling:true,
+		scrollHorizontally: true,
+    fitToSection:false,
+    responsiveWidth: 768
+	});
 });
 
-// ---- SWAMIX EXPERIENCE MOD
-// semiscroll= $(window).bind('DOMMouseScroll mousewheel', function(event) {
-//   event.preventDefault()
-//     console.log(event)
-//     if (event.originalEvent.wheelDelta >= 0) {
-//         window.scrollTo(0, window.scrollY - window.innerHeight / 2);
-//         console.log('Scroll up');
-//     }
-//     else {
-//         console.log('Scroll down');
-//         window.scrollTo(0, window.scrollY + window.innerHeight / 2);
-//     }
+// ------------------ CTA HANDLING --------------------
+$('[btn-cta]').click(function (e) { 
+  e.preventDefault();
+  sw
+});
+
+
+// zoomWordOnHover = $('w').hover(function() {
+//   $(this).prev().css('font-size', '1.25em');
+//   $(this).css('font-size', '1.5em');
+//   $(this).next().css('font-size', '1.25em');
+// },function() {
+//   $(this).prev().css('font-size', '1em');
+//   $(this).css('font-size', '1em');
+//   $(this).next().css('font-size', '1em');
 // });
 
 
-
-
-$(document).ready(function() {
-  $('video').each(function() {
-      // $(this).get(0).pause();
-  });
-});
