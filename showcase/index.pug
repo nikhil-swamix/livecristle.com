@@ -1,0 +1,159 @@
+
+html(lang="en")
+	head
+		title Fresh Delivery Cuts  E-Commerce
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(rel='icon' type='image/png' sizes='16x16' href='./img/tehe-1-footer.png')
+
+
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+		link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous')
+		link(rel='stylesheet' href='./assets/css/style.min.css')
+		//- style
+			include ./assets/css/style.min.css
+
+		script
+			include ./assets/js/top-script-min.js
+
+	body 
+		header
+			nav.navbar.navbar-expand-lg.px-lg-3.bg-white.mx-0
+				i.fa-solid.fa-list-timeline
+				img(src='img/tehe-1-footer.png' height='70' alt='')
+
+				form.d-flex.mx-auto(role='search')
+					input.form-control.me-2(type='search' placeholder='Search From 100% Fresh products' aria-label='Search')
+					i.fa-solid.fa-magnifying-glass
+
+				.btn-group.px-lg-3
+					button.btn.btn-dark.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false').
+						Actions
+					ul.dropdown-menu
+						li
+							a.dropdown-item(href='#') OTP Login (SMS)
+						li
+							a.dropdown-item(href='#') Check Pincode Deliveriability
+						li
+							a.dropdown-item(href='#') Order Tracking
+						li
+							hr.dropdown-divider
+						li
+							a.dropdown-item(href='#') Customer Support
+
+				a.btn.btn-primary.active.position-relative.theme1-bg(href='#' role='button' type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+					span.ps-lg-2
+						|My Bag
+						img.position-absolute.top-0.start-0(src='img/navbar/bag.png' height='40' alt='' style='margin-left:-1em')
+					span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger
+						|2
+
+			#exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+				.modal-dialog
+					.modal-content
+						.modal-header
+							h5#exampleModalLabel.modal-title Your Order
+							button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+						.modal-body
+							| Your cart will be displayed here pls
+						.modal-footer
+							button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+							button.btn.btn-primary(type='button') Save changes
+
+		#altnav.row.mx-0
+			section#altnav-menu.sticky-top.col-lg-2.px-0.py-2
+				include menu.pug
+			
+				
+				
+
+			section#altnav-explorer.col-lg-10.py-2.px-lg-3
+				include explorer.pug
+				script.
+					const fpPromise = import('https://openfpcdn.io/fingerprintjs/v3')
+						.then(FingerprintJS => FingerprintJS.load())
+
+						fpPromise.then(fp => fp.get())
+						.then(result => {
+							const visitorId = result.visitorId
+							console.log(visitorId)
+						})
+						.catch(error => console.error(error))
+
+		footer.px-lg-2.py-5(style='overflow: hidden;max-width: 100vw;')
+			.row
+				.col-lg-3
+					.col-12.logo.text-center
+						a(href='#')
+						img(src='img/icons/tehe-1-footer.png' alt='' width='200')
+					img.col-6.py-3(src='img/icons/g.png' alt='')
+					img.col-6.py-3(src='img/icons/i.png' alt='')
+				.col-lg-3
+					h4.display-4.m-0 About Us
+					a.btn.p-1.py-0.btn-outline-success(href='#') Terms of Service
+					a.btn.p-1.py-0.btn-outline-success(href='#') Privacy Policy
+					p
+					| Our Company ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore
+					| magna ali incididunt ut labore dolore magna aliqua enim ad minim veniam.
+					br
+				.col-lg-3
+					h4.display-4.m-0  Contact Info
+					ul.row.px-0.py-0
+						a.btn.btn-outline-dark.p-1.px-0.col(href='#')
+							span.fab.fa-google-plus-g
+						a.btn.btn-outline-dark.p-1.px-0.col(href='#')
+							span.fab.fa-facebook-f
+						a.btn.btn-outline-dark.p-1.px-0.col(href='#')
+							span.fab.fa-instagram
+						a.btn.btn-outline-dark.p-1.px-0.col(href='#')
+							span.fab.fa-twitter
+							
+					a.d-block Flat 20, Reynolds Neck, North Hele naville, FV77 8WS
+					a.d-block +2(305) 587-3407
+					a.d-block info@morris.com
+				.col-lg-3
+					h4.display-4.m-0 Product
+					#explore-footer.p-0
+						.swiper
+							.swiper-wrapper
+								.swiper-slide.p-0
+									.card.text-white.bg-danger(style='background-image: url(./img/category/chicken0.webp);')
+										.btn.btn-danger Chicken
+								.swiper-slide.p-0
+									.card.text-white.bg-danger(style='background-image: url(./img/category/mutton0.webp);')
+										.btn.btn-danger Mutton
+								.swiper-slide.p-0
+									.card.text-white.bg-danger(style='background-image: url(./img/category/eggs0.webp);')
+										.btn.btn-danger Eggs
+								.swiper-slide.p-0
+									.card.text-white.bg-danger(style='background-image: url(./img/category/fish0.webp);')
+										.btn.btn-danger Fish &amp; Prawns
+								// <div class="swiper-pagination"></div>
+								.swiper-scrollbar
+								script(type='text/javascript').
+									lazySwiper('#explore-footer .swiper', {
+										loop: true,
+										mousewheel: true,
+										slidesPerView:3,
+										spaceBetween:5,
+										pagination: {
+										el: '.swiper-pagination',
+										},
+										navigation: {
+										nextEl: '.swiper-button-next',
+										prevEl: '.swiper-button-prev',
+										},
+										scrollbar: {
+										el: '.swiper-scrollbar',
+										},
+									});
+			.text-center.pt-5
+				span Fresh Delivery Cuts &copy; 2022 All Right Reserved
+
+
+		link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.15.4/css/all.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js' integrity='sha512-+oUge+PHyEv6R7xjWkZ9zeGWbRLIs24P6/2afAClEZi+kZ2vsK+Di4Ud9ON39uAbkkcCrewO3ayzk2765bbPpw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.css' integrity='sha512-W3EpFysZWfMjkA5NIsJ1jQbd2CvZrEY0YRB16wlQdePUuxykf4E47/Yqajz2vkCRcMYkxY9+CHY6r2Al0AExBQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+		script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous')
+		script(src='https://unpkg.com/sweetalert/dist/sweetalert.min.js')

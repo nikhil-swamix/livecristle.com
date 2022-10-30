@@ -1,0 +1,24 @@
+-	
+	var objects = [	
+		{"label":"vegetables","icon":"fad fa-seedling"},
+		{"label":"fruits","icon":"fab fa-apple"},
+		{"label":"flowers","icon":"fad fa-flower-tulip"},
+		{"label":"oils & ghee","icon":"fad fa-jug"},
+		{"label":"bakery & snacks","icon":"fad fa-cookie-bite"},
+		{"label":"beverages","icon":"fad fa-coffee-togo"},
+		{"label":"Meat, Egg, Seafood", "icon":"fad fa-meat"},
+		{"label":"pulses & grains", "icon":"fad fa-wheat"},
+		{"label":"High Nutrition", "icon":"fad fa-waveform-path"}
+	]
+
+.list-group.list-group-flush.rounded-0.rounded-end(style="border-radius:1em")
+	each el in objects
+		button.list-group-item.py-3.lh-tight(href='#' )
+			.d-flex.align-items-center
+				span.text-center(style="width:3em")!= `<i class="${el.icon} fa-2x px-2" ></i>`
+				h4.text-capitalized.m-0!=  el.label
+
+script 
+	include ./assets/js/menu-plugins.js
+
+	//- each val in ["vegetables", "fruits" , "flowers"," oils & ghee", "bakery & snacks", "beverages" , " Meat, Egg, Seafood", "pulses & grains","King's & Queen's Diet"] 

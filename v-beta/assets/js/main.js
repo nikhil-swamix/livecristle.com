@@ -197,7 +197,7 @@ function magictext(delay=100) {
   });
 }
 
-/*-----COMPONENT LOADER*/
+/*----------------COMPONENT LOADER ----------------*/
 $(document).ready(function() {
   $('[data-load]').each(function(index, el) {
     $.get($(el).attr('data-load'), function(data) {
@@ -207,7 +207,9 @@ $(document).ready(function() {
   });
 });
 
-/*-----CURSOR*/
+
+
+/*----------------CURSOR----------------*/
 var cursor = {
     delay: 3,
     _x: 0,

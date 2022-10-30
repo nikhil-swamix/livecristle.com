@@ -22,6 +22,14 @@
   display: none;
 }
 
+.list-group-item.active{
+  --bs-list-group-active-bg: #27a776 !important;
+  --bs-list-group-active-border-color: #2da172 ;
+}
+.list-group *{
+  z-index: 9999;
+  cursor: none;
+}
 
 /*--------------------------------------------------------------
 # General
@@ -62,7 +70,9 @@ h6 {
 h1{
   font-family: "Bebas Neue";
 }
-
+#fullpage {
+  z-index: 100;
+}
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
@@ -705,7 +715,7 @@ w:hover{
   height: 8px;
   background-color: #19cf45;
   /*box-shadow: 0 0 0.2em #fff;*/
-  z-index: 1;
+  z-index: 1000;
 }
 
 .cursor-dot-outline {
@@ -714,6 +724,7 @@ w:hover{
   background-color: #060;
   /*box-shadow: 0 0 0.25em inset #000;*/
   box-shadow: 0 0 0.5em #000;
+  z-index: -1;
 }
 
 /*--------------*/
@@ -783,6 +794,10 @@ w:hover{
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+#project-section{
+  
 }
 
 @media(max-width:768px){

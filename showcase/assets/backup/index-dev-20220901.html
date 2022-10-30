@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Fresh Delivery Cuts</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom css -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js"
+    integrity="sha512-+oUge+PHyEv6R7xjWkZ9zeGWbRLIs24P6/2afAClEZi+kZ2vsK+Di4Ud9ON39uAbkkcCrewO3ayzk2765bbPpw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.css"
+    integrity="sha512-W3EpFysZWfMjkA5NIsJ1jQbd2CvZrEY0YRB16wlQdePUuxykf4E47/Yqajz2vkCRcMYkxY9+CHY6r2Al0AExBQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- upper nav -->
+    <section class="d-lg-flex ">
+      <div class="ps-lg-5 ps-md-4 ps-sm-4 ps-xs-3 upper_nav_section">
+        <i class="fa-solid fa-phone"></i><a href="#">1800-313-3302</a>
+        <i class="fa-solid fa-message"></i><a href="#">customercare@freshtohome.com</a>
+      </div>
+
+      <div class="ms-auto upper_nav_content">
+
+
+        <a>Certificates</a>
+        <a>Why Us</a>
+        <a class="ms-sm-5">Download App</a>
+
+
+
+      </div>
+
+
+    </section>
+    <!-- upper nav -->
+
+
+
+    <!-- middle nav -->
+    <nav class="navbar navbar-expand-lg p-lg-3 bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="./">
+            <img src="img/tehe-1-footer.png" height="70" alt="">
+        </a>
+
+        <div id="signin">
+          <a href="#"><img src="img/icons/login.png" alt="" width="20"></a>
+          <a href="#" class="login">Login</a>
+        </div>
+
+        <div id="loacation ms-5">
+          <a href="#" class="ms-4"><img src="img/icons/location.png" alt="" width="20"></a>
+        </div>
+
+
+        <form class="d-flex mx-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search From 100% Fresh products"
+            aria-label="Search">
+          <a href="#"></a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+
+        
+        
+        <button type="button" class="btn theme1-bg position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          
+          <span><img src="img/navbar/bag.png" height="50" alt=""> My Bag</span>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        
+        
+
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- middle nav -->
+
+
+    <!-- last nav -->
+    <nav class="navbar navbar-expand-lg  border mx-auto py-lg-3 shadow">
+      <div class="container-fluid ms-lg-auto">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto m-2 ">
+            <li class="nav-item">
+              <a class="btn btn-lg btn-danger" aria-current="page" href="category.html">Chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-lg btn-danger" aria-current="page" href="category.html">Mutton</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-lg btn-danger" aria-current="page" href="category.html">Eggs</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-lg btn-danger" aria-current="page" href="category.html">Fish & Seafood</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- last nav -->
+  </header>
+
+
+  <!-- hero section -->
+  <section class="row px-lg-5 my-3 swiper_section">
+    <h1 class="display-1 text-center font3">Today's Offers</h1>
+    <div class="col-lg-9 swiper ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/banners/1.png" class=" w-100" alt="..." class="img-fluid">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banners/2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banners/3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+          // direction: 'horizontal',
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      </script>
+    </div>
+
+    <!-- content -->
+    <div class=" col-lg-3  px-2" id="feature-bar">
+      <div class="row col-12 py-2 text-justify mb-lg-2 shadow2 rounded-4 ">
+        <div class="col-lg-3 col-2 p-1 feature_image">
+          <img class="img-fluid" src="./img/icons/bibimbap.png">
+        </div>
+        <div class="col-lg-9 col-10 feature_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod
+          tempor incididunt.</div>
+      </div>
+      <hr class="d-lg-none">
+      <div class="row col-12 py-2 text-justify mb-lg-2 shadow2 rounded-4 ">
+        <div class="col-lg-3 col-2 p-1 feature_image">
+          <img class="img-fluid" src="./img/icons/delivery.png">
+        </div>
+        <div class="col-lg-9 col-10 feature_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod
+          tempor incididunt.</div>
+      </div>
+      <hr class="d-lg-none">
+      <div class="row col-12 py-2 text-justify mb-lg-2 shadow2 rounded-4 ">
+        <div class="col-lg-3 col-2 p-1 feature_image">
+          <img class="img-fluid" src="./img/icons/smartphone.png">
+        </div>
+        <div class="col-lg-9 col-10 feature_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod
+          tempor incididunt.</div>
+      </div>
+    </div>
+    <!-- content -->
+  </section>
+  <!-- hero section -->
+
+
+
+  <div>
+    <div id="chicken-flagship" class="row"></div>
+    <div id="mutton-flagship" class="row">
+      <h2>Order Mutton</h2>
+      <div class="col-4">
+        
+      </div>
+      <div class="col-8"></div>
+      Mutton biryani is rich in omega 3 fatty acid which is believed to be a successful treatment for autism. It has a low sodium and potassium which helps to control blood pressure and prevents stroke and kidney disease. Mutton biryani contains niacin which helps to promote energy metabolism.
+    </div>
+    <div id="fish-flagship" class="row"></div>
+  </div>
+
+
+  <div class=" py-3 product_section">
+    <div class="row px-1 px-lg-5 mx-0" id="card-gallery">
+    </div>
+    <script type="text/javascript">
+      function card_generator() {
+        template = `
+        <div class="col-xl-3 col-lg-3 col-md-4 col-6 p-2 card_wrapper">
+          <div class="card">
+            <div class="card-head">
+              <img src="./img/chicken/#VAR1" alt="" class="img-fluid">
+              
+            </div>
+
+            <div class="card-body p-1 px-lg-3">
+              <h5 class="card-title"> Premium Soft and Boneless Chicken #INDEX</h5>
+              <button type="button" class="btn btn-success">₹#DISCOUNTED_PRICE <s>#PRICE</s></button>
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">200g</button>
+                <button type="button" class="btn btn-outline-primary">500g</button>
+                <button type="button" class="btn btn-outline-primary">1000g</button>
+              </div>
+              <p class="card-text">
+                
+              </p>
+              <p>Our best catalog of chicken. lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+            </div>
+
+          </div>
+        </div>
+        `
+        imagenames = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg"]
+        var count = 0
+        for (let i of imagenames) {
+          PRICE = getRandomInt(100, 500)
+          $('#card-gallery').append(
+            template.replace('#VAR1', i)
+              .replace('#INDEX', ++count)
+              .replace('#PRICE', PRICE)
+              .replace('#DISCOUNTED_PRICE', Math.floor(PRICE - PRICE / 10))
+          )
+        }
+      }
+
+      function addToCart() {
+        swal("Product Added To Cart!", "Your Meat Is added Successfully, Go To Cart to Finalize the purchase", "success");
+      }
+      $(document).ready(function () {
+        card_generator()
+        $('input').click(function(event) {
+          alert('bulli')
+          event.preventdefault()
+        });
+
+      });
+    </script>
+  </div>
+
+  <script type="text/javascript">
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    }
+  </script>
+
+  <!-- products -->
+
+  <!-- footer -->
+  <footer class="p-lg-5 " style="overflow: hidden;max-width: 100vw;">
+    <div class="px-lg-5 px-2">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-12 logo text-center">
+              <a href="#"><img src="img/icons/tehe-1-footer.png" alt="" width="200" /></a>
+            </div>
+            <img class="col-6 py-3"  src="img/icons/g.png" alt="" >
+            <img class="col-6 py-3"  src="img/icons/i.png" alt="" >
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          
+          <h4 class="display-4">About Our Company</h4>
+          <p>
+            Our Company ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore
+            magna aliqua enim ad minim veniam.Our Company ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam.
+          </p>
+          <a href="#" class="btn btn-outline-success">Terms of Service</a>
+          <a href="#" class="btn btn-outline-success">Privacy Policy</a>
+          <br>
+        </div>
+
+        <div class="col-lg-3">
+          <h4 class="display-4">Contact Info</h4>
+          <p>
+            <a class="d-block">Flat 20, Reynolds Neck, North Hele naville, FV77 8WS</a>
+            <a class="d-block">+2(305) 587-3407</a>
+            <a class="d-block">info@morris.com</a>
+            
+          </p>
+          <ul class="row px-0 py-3">
+            <a href="#" class="btn btn-outline-dark col "><span class="fab fa-google-plus-g fa-2x"></span></a>
+            <a href="#" class="btn btn-outline-dark col "><span class="fab fa-facebook-f fa-2x"></span></a>
+            <a href="#" class="btn btn-outline-dark col "><span class="fab fa-instagram fa-2x"></span></a>
+            <a href="#" class="btn btn-outline-dark col "><span class="fab fa-twitter fa-2x"></span></a>
+          </ul>
+        </div>
+
+        <div class="col-lg-3" >
+          <h4 class="display-4">Products</h4>
+          <div id="explore-footer" class="p-0">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide p-0">
+                  <div class="card text-white bg-danger " style="background-image: url(./img/category/chicken0.webp);" >
+                    <div class="btn btn-danger">Chicken</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-0">
+                  <div class="card text-white bg-danger " style="background-image: url(./img/category/mutton0.webp);" >
+                    <div class="btn btn-danger">Mutton</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-0">
+                  <div class="card text-white bg-danger " style="background-image: url(./img/category/eggs0.webp);" >
+                    <div class="btn btn-danger">Eggs</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-0">
+                  <div class="card text-white bg-danger " style="background-image: url(./img/category/fish0.webp);" >
+                    <div class="btn btn-danger">Fish & Prawns</div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+              <div class="swiper-scrollbar"></div>
+              <script type="text/javascript">
+                var swiper2 = new Swiper('#explore-footer .swiper', {
+                  // Optional parameters
+                  // direction: 'horizontal',
+                  loop: true,
+                  slidesPerView:3,
+                  spaceBetween:5,
+
+                  // If we need pagination
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+
+                  // Navigation arrows
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+
+                  // And if we need scrollbar
+                  scrollbar: {
+                    el: '.swiper-scrollbar',
+                  },
+                });
+              </script>
+            </div>
+
+            
+            
+            
+            
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="text-center">
+      <span class="btn btn-sm py-0 btn-dark">Fresh Delivery Cuts &copy; 2022 All Right Reserved</span> 
+    </div>
+  </footer>
+
+  <!-- footer -->
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

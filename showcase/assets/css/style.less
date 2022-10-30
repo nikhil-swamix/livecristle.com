@@ -1,0 +1,438 @@
+@import "https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Bebas+Neue&family=Lobster+Two&display=swap";
+@font-face {
+	font-family: blackboard;
+	src: url(../../assets/fonts/blackboard.ttf);
+}
+
+:root {
+	--theme-color-1: #a0cd4a;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	overflow-x: hidden;
+}
+
+.theme1-bg {
+	background-color: var(--theme-color-1);
+	color: #000;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #444;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--theme-color-1);
+	border-radius: 1em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	// background: #555;
+}
+
+
+.font-sm {
+	font-size: 0.75em !important;
+}
+
+.font-md {
+	font-size: 0.9em !important;
+}
+
+.font-blackboard{
+	font-family: blackboard;
+}
+
+.font-1 {
+	font-family: 'Aldrich', sans-serif;
+}
+.font-2 {
+	font-family: 'Bebas Neue', cursive;
+}
+.font-3 {
+	font-family: 'Lobster Two', cursive;
+}
+.font-4 {
+	font-family: "Montserrat", cursive;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h4 {
+	font-family: 'bebas neue', cursive;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.text-capitalized {
+	text-transform: capitalize;
+}
+
+header {
+	background-color: #a0cd4a;
+	color: rgb(0, 0, 0);
+	a {
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		font-size: 13px;
+		padding: 0 1em;
+		&:hover {
+			color: #fff;
+		}
+	}
+	i {
+		font-size: 13px;
+	}
+	.navbar-nav {
+		margin: auto;
+		li {
+			padding: 0 1em;
+		}
+	}
+}
+.navbar {
+	box-shadow: 0 0 0.5em #0006;
+	form {
+		input {
+			width: 35em;
+			margin-left: -12em;
+		}
+		i {
+			font-size: 1.3em;
+			margin-left: -3.5em;
+			margin-top: .5em;
+			color: black;
+		}
+	}
+}
+
+.navbar-nav {
+	.nav-link {
+		padding: 10px 20px !important;
+		border: 1px solid rgb(235, 235, 235);
+		&:hover {
+			background-color: #a0cd4a;
+			color: #fff;
+		}
+	}
+}
+
+.navbar_last {
+	padding: 1em 0;
+	.nav-link {
+		margin: 0.3em;
+	}
+}
+
+#signin {
+	a {
+		font-size: 15px;
+		padding: 0 0.1em;
+		&:hover {
+			color: rgb(73, 73, 73);
+		}
+	}
+	i {
+		font-size: 20px;
+	}
+}
+
+.cart {
+	a {
+		img {
+			width: 30px;
+		}
+	}
+	span {
+		position: absolute;
+		top: 2em;
+		right: 3.5em;
+	}
+}
+
+.carousel_content {
+	i {
+		font-size: 24px;
+	}
+	p {
+		font-size: 13px;
+	}
+}
+.carosel-inner {
+	img {
+		width: 200px;
+	}
+}
+.swiper {
+	.swiper-slide {
+		max-height: 50vh;
+	}
+	border-radius: 1em;
+}
+.swiper-button-prev {
+	color: #fff;
+	text-shadow: 0 0 1em #fff;
+}
+.swiper-button-next {
+	color: #fff;
+	text-shadow: 0 0 1em #fff;
+}
+
+
+.btn.border-0 {
+	border: none;
+}
+.row {
+	margin-left:  0 !important;
+	margin-left:  0 !important;
+}
+.shadow-2 {
+	box-shadow: 0 0 2em #6663;
+}
+
+#feature-bar {
+	border-radius: 1em;
+	img{
+		width:3em;
+		height:3em;
+	}
+}
+
+
+#altnav::-webkit-scrollbar {
+	width: 10px;
+}
+
+#altnav{
+	max-height:95vh;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+#altnav-menu{
+	.list-group-item{
+		transition:0.25s;
+	}
+}
+
+#altnav-explorer{
+	background-color: #eee;
+	.card{
+		min-height: 20em;
+		height:auto;
+		border: none;
+		box-shadow: 0 0 0.5em #666c;
+	}
+	.card-head {
+		img {
+			height: 10em;
+			width: 100%;
+			transition: all 0.5s;
+		}
+	}
+	.add2bag{
+		border: none;
+	}
+}
+
+.card {
+	border: none;
+	overflow: hidden;
+	border-radius: 0.5em;
+	transition: 0.2s;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	&:hover {
+		box-shadow: 1em 1em 3em #6666;
+		transform: scale(1.05);
+		z-index: 99;
+	}
+	.card-head {
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+			transition: all 0.5s;
+		}
+	}
+	.card-body {
+		background: #fff6;
+		h5 {
+			font-size: 14px;
+		}
+	}
+	.card-text {
+		span {
+			&:nth-child(1) {
+				text-decoration-color: red !important;
+				text-decoration: line-through;
+			}
+			font-size: 15px;
+			margin: 5px;
+		}
+	}
+}
+
+.product_Image {
+	height: 400px;
+	width: 400px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		transition: all 0.3s;
+	}
+	&:hover {
+		img {
+			transform: scale(1.2);
+		}
+	}
+}
+
+.product_desc {
+	margin-left: 170px;
+}
+
+.main-footer {
+	position: relative;
+	padding-top: 20px;
+	padding: 10px 0px 0px;
+	background-color: #e9e9e9;
+	background-repeat: repeat-x;
+	background-position: right bottom;
+	.footer-widget {
+		position: relative;
+		margin-bottom: 40px;
+		h2 {
+			position: relative;
+			font-size: 22px;
+			font-weight: 600;
+			color: #161c42;
+			line-height: 1.2em;
+			margin-bottom: 30px;
+			margin-top: 25px;
+			text-transform: capitalize;
+		}
+	}
+	.widgets-section {
+		position: relative;
+		padding-bottom: 60px;
+	}
+	.about-widget {
+		position: relative;
+		.logo {
+			position: relative;
+			margin-bottom: 15px;
+			width: 210px;
+		}
+		.text {
+			position: relative;
+		}
+	}
+}
+
+#explore-footer {
+	overflow: visible;
+	width: 40em;
+	.card {
+		&:hover {
+			transform: none;
+		}
+		border-radius: 0;
+		background-size: cover;
+		height: 10em;
+		border-radius: 0.5em;
+	}
+	.btn {
+		border-radius: 0;
+	}
+	.swiper-slide {
+		border-radius: 0.5em;
+	}
+	.swiper {
+		border-radius: 0.5em;
+		z-index: 999;
+		overflow-y: visible !important;
+	}
+}
+
+
+@media screen and (max-width:768px) {
+	.navbar-nav {
+		flex-direction: row !important;
+	}
+	header {
+		.upper_nav_section {
+			.fa-message {
+				margin-left: 29em !important;
+			}
+		}
+	}
+	.upper_nav_content {
+		a {
+			&:nth-child(1) {
+				margin-left: 30px;
+			}
+			&:nth-child(2) {
+				margin-left: 220px;
+			}
+			&:nth-child(3) {
+				margin-left: 220px !important;
+			}
+		}
+	}
+	.navbar {
+		form {
+			input {
+				width: 18.5em;
+				margin-left: -6em;
+			}
+		}
+	}
+	#signin {
+		a {
+			font-size: 18px;
+			font-size: 18px;
+		}
+		i {
+			font-size: 18px;
+			margin-left: -35px;
+			font-size: 18px;
+			margin-left: -35px;
+		}
+	}
+	.login {
+		margin-left: -35px;
+	}
+	.navbar-brand {
+		img {
+			width: 80px;
+		}
+	}
+	.cart {
+		span {
+			position: absolute;
+			top: 0.7em;
+			font-size: 12px;
+			right: 1.7em;
+		}
+	}
+	.swiper {
+		border-radius: 1em;
+	}
+	.swiper-button-next {
+		display: none;
+	}
+	.swiper-button-prev {
+		display: none;
+	}
+	
+}
